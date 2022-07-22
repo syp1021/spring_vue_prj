@@ -22,14 +22,15 @@ import com.example.spring.vo.TestVO;
 
 /**
  * Handles requests for the application home page.
+ * 테스트
  */
 @Controller
-public class TestController2 {
+public class ReTestController2 {
 	
 	@Autowired(required = false)
 	private JdbcTemplate jt;
 	
-	private static final Logger logger = LoggerFactory.getLogger(TestController2.class);
+	private static final Logger logger = LoggerFactory.getLogger(ReTestController2.class);
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
